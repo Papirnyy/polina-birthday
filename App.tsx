@@ -305,10 +305,10 @@ export default function App() {
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { title: 'Гранд Базар', desc: 'Бубу и Дуду гуляют по знаменитому крытому рынку', image: images.walking },
-              { title: 'Прогулка на лодке', desc: 'Романтический круиз по Босфору на закате', image: images.boat },
-              { title: 'Турецкая пахлава', desc: 'Наслаждаемся вкуснейшими сладостями Стамбула', image: images.baklava },
-              { title: 'Фисташковое мороженое', desc: 'Наша фисташковая связь в действии! 🌰', image: images.pistachio },
+              { title: 'Гранд Базар', desc: 'Бубу и Дуду гуляют по знаменитому крытому рынку', image: `${import.meta.env.BASE_URL}photos/card-1.jpg` },
+              { title: 'Прогулка на лодке', desc: 'Романтический круиз по Босфору на закате', image: `${import.meta.env.BASE_URL}photos/card-2.jpg` },
+              { title: 'Турецкая пахлава', desc: 'Наслаждаемся вкуснейшими сладостями Стамбула', image: `${import.meta.env.BASE_URL}photos/card-3.jpg` },
+              { title: 'Фисташковое мороженое', desc: 'Наша фисташковая связь в действии! 🌰', image: `${import.meta.env.BASE_URL}photos/card-4.jpg` },
             ].map((item, i) => (
               <AnimatedSection key={i}>
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-pink-400/30 transition-all duration-500 hover:bg-white/10 group">
