@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@keyframes float-up {
+  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 0.5; }
+  100% { transform: translateY(-100vh) rotate(360deg) scale(0.5); opacity: 0; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heart-fly-in {
+  0% { opacity: 0; transform: scale(0) rotate(-180deg); }
+  50% { opacity: 1; transform: scale(1.2) rotate(10deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float-up { animation: float-up linear infinite; }
+.animate-sparkle { animation: sparkle ease-in-out infinite; }
+.animate-confetti-fall { animation: confetti-fall ease-in forwards; }
+.animate-fade-in { animation: fade-in 0.8s ease-out forwards; }
+.animate-heart-fly-in { animation: heart-fly-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+body { font-family: 'Montserrat', sans-serif; }
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a0a2e; }
+::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #ec4899, #a855f7); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(to bottom, #f472b6, #c084fc); }
+
+::selection { background-color: rgba(236, 72, 153, 0.3); color: white; }
