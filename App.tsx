@@ -305,16 +305,15 @@ export default function App() {
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { title: 'Гранд Базар', desc: 'Бубу и Дуду гуляют по знаменитому крытому рынку', image: `${import.meta.env.BASE_URL}photos/card-1.jpg` },
-              { title: 'Прогулка на лодке', desc: 'Романтический круиз по Босфору на закате', image: `${import.meta.env.BASE_URL}photos/card-2.jpg` },
-              { title: 'Турецкая пахлава', desc: 'Наслаждаемся вкуснейшими сладостями Стамбула', image: `${import.meta.env.BASE_URL}photos/card-3.jpg` },
-              { title: 'Фисташковое мороженое', desc: 'Наша фисташковая связь в действии! 🌰', image: `${import.meta.env.BASE_URL}photos/card-4.jpg` },
+              { title: 'В саду у Долмабахче', desc: 'Солнечный день среди дворцовых садов', image: `${import.meta.env.BASE_URL}photos/IMG_0236.jpeg`, imageClass: 'aspect-[3/4] object-fill' },
+              { title: 'Начало отпуска', desc: 'Заселение в отель', image: `${import.meta.env.BASE_URL}photos/IMG_0580.jpeg`, imageClass: 'h-auto' },
+              { title: 'Смотровая площадка в Стамбуле', desc: 'Любуемся городом и Босфором', image: `${import.meta.env.BASE_URL}photos/IMG_0740.jpeg`, imageClass: 'h-auto' },
+              { title: 'С видом на Айя-София', desc: 'Одно из самых красивых мест Стамбула', image: `${import.meta.env.BASE_URL}photos/IMG_9588.jpeg`, imageClass: 'h-auto' },
             ].map((item, i) => (
               <AnimatedSection key={i}>
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-pink-400/30 transition-all duration-500 hover:bg-white/10 group">
-                  <div className="relative h-64 overflow-hidden">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="relative overflow-hidden">
+                    <img src={item.image} alt={item.title} className={`block w-full transition-opacity duration-500 group-hover:opacity-95 ${item.imageClass}`} />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
