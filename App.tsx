@@ -305,7 +305,7 @@ export default function App() {
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { title: 'В саду у Долмабахче', desc: 'Солнечный день среди дворцовых садов', image: `${import.meta.env.BASE_URL}photos/IMG_0236.jpeg`, imageClass: 'aspect-[3/4] object-fill' },
+              { title: 'В саду у Долмабахче', desc: 'Солнечный день среди дворцовых садов', image: `${import.meta.env.BASE_URL}photos/IMG_0236.jpeg`, imageClass: 'h-auto' },
               { title: 'Начало отпуска', desc: 'Заселение в отель', image: `${import.meta.env.BASE_URL}photos/IMG_0580.jpeg`, imageClass: 'h-auto' },
               { title: 'Смотровая площадка в Стамбуле', desc: 'Любуемся городом и Босфором', image: `${import.meta.env.BASE_URL}photos/IMG_0740.jpeg`, imageClass: 'h-auto' },
               { title: 'С видом на Айя-София', desc: 'Одно из самых красивых мест Стамбула', image: `${import.meta.env.BASE_URL}photos/IMG_9588.jpeg`, imageClass: 'h-auto' },
